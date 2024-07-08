@@ -33,7 +33,7 @@ extension HomeScreen {
             CircleButtonView(imageName: showPortfolio
                              ? "plus"
                              : "info")
-            .animation(.none)
+            .animation(.none, value: showPortfolio)
             .background(
                 CircleButtonAnimationView(animated: $showPortfolio)
             )

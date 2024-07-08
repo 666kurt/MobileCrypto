@@ -15,6 +15,7 @@
 		FCED92052C3C4A9000BA0275 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED92042C3C4A9000BA0275 /* HomeScreen.swift */; };
 		FCED92082C3C4BE300BA0275 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED92072C3C4BE300BA0275 /* CircleButtonView.swift */; };
 		FCED920A2C3C531700BA0275 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED92092C3C531700BA0275 /* CircleButtonAnimationView.swift */; };
+		FCED920D2C3C6CCD00BA0275 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED920C2C3C6CCD00BA0275 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FCED92042C3C4A9000BA0275 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		FCED92072C3C4BE300BA0275 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		FCED92092C3C531700BA0275 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		FCED920C2C3C6CCD00BA0275 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		FCED91ED2C3C46C100BA0275 /* MobileCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				FCED920B2C3C6CB900BA0275 /* Models */,
 				FCED91FD2C3C485700BA0275 /* App */,
 				FCED91FC2C3C484300BA0275 /* Modules */,
 				FCED91FE2C3C485E00BA0275 /* Utilities */,
@@ -133,6 +136,14 @@
 				FCED92092C3C531700BA0275 /* CircleButtonAnimationView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FCED920B2C3C6CB900BA0275 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCED920C2C3C6CCD00BA0275 /* Coin.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				FCED92082C3C4BE300BA0275 /* CircleButtonView.swift in Sources */,
 				FCED91EF2C3C46C100BA0275 /* MobileCryptoApp.swift in Sources */,
 				FCED920A2C3C531700BA0275 /* CircleButtonAnimationView.swift in Sources */,
+				FCED920D2C3C6CCD00BA0275 /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
