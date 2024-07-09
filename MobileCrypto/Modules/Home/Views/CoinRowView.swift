@@ -45,7 +45,7 @@ extension CoinRowView {
     private var centerColumn: some View {
         VStack(spacing: 0) {
             VStack(alignment: .trailing) {
-                Text(coin.currentHoldingPrice.asCurrencyWithDecimal())
+                Text(coin.currentHoldingPrice.asCurrencyWith6Decimal())
                     .bold()
                 Text((coin.currentHoldings ?? 0).asStringNumber())
             }
@@ -55,7 +55,7 @@ extension CoinRowView {
     
     private var rightColumn: some View {
         VStack(alignment: .trailing) {
-            Text(coin.currentPrice.asCurrencyWithDecimal())
+            Text(coin.currentPrice.asCurrencyWith6Decimal())
             Text(coin.priceChangePercentage24H?.asPercentString() ?? "0%")
                 .foregroundStyle(
                     (coin.priceChangePercentage24H ?? 0) >= 0

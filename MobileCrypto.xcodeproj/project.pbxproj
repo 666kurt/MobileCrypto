@@ -10,8 +10,8 @@
 		FCA414672C3D551700886656 /* PreviewProvider+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA414662C3D551700886656 /* PreviewProvider+ext.swift */; };
 		FCA414692C3D576F00886656 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA414682C3D576F00886656 /* CoinRowView.swift */; };
 		FCA4146B2C3D5CDC00886656 /* Double+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4146A2C3D5CDC00886656 /* Double+ext.swift */; };
+		FCA4146D2C3D873800886656 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4146C2C3D873800886656 /* HomeViewModel.swift */; };
 		FCED91EF2C3C46C100BA0275 /* MobileCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91EE2C3C46C100BA0275 /* MobileCryptoApp.swift */; };
-		FCED91F12C3C46C100BA0275 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91F02C3C46C100BA0275 /* ContentView.swift */; };
 		FCED91F32C3C46C300BA0275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCED91F22C3C46C300BA0275 /* Assets.xcassets */; };
 		FCED91F62C3C46C400BA0275 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCED91F52C3C46C400BA0275 /* Preview Assets.xcassets */; };
 		FCED92002C3C489500BA0275 /* Color+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91FF2C3C489500BA0275 /* Color+ext.swift */; };
@@ -25,9 +25,9 @@
 		FCA414662C3D551700886656 /* PreviewProvider+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+ext.swift"; sourceTree = "<group>"; };
 		FCA414682C3D576F00886656 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		FCA4146A2C3D5CDC00886656 /* Double+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ext.swift"; sourceTree = "<group>"; };
+		FCA4146C2C3D873800886656 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FCED91EB2C3C46C100BA0275 /* MobileCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCED91EE2C3C46C100BA0275 /* MobileCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCryptoApp.swift; sourceTree = "<group>"; };
-		FCED91F02C3C46C100BA0275 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FCED91F22C3C46C300BA0275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCED91F52C3C46C400BA0275 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCED91FF2C3C489500BA0275 /* Color+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ext.swift"; sourceTree = "<group>"; };
@@ -87,7 +87,6 @@
 		FCED91FC2C3C484300BA0275 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FCED91F02C3C46C100BA0275 /* ContentView.swift */,
 				FCED92062C3C4BB700BA0275 /* Components */,
 				FCED92012C3C4A6800BA0275 /* Home */,
 			);
@@ -134,6 +133,7 @@
 		FCED92032C3C4A7300BA0275 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FCA4146C2C3D873800886656 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,8 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA414692C3D576F00886656 /* CoinRowView.swift in Sources */,
+				FCA4146D2C3D873800886656 /* HomeViewModel.swift in Sources */,
 				FCED92052C3C4A9000BA0275 /* HomeScreen.swift in Sources */,
-				FCED91F12C3C46C100BA0275 /* ContentView.swift in Sources */,
 				FCED92002C3C489500BA0275 /* Color+ext.swift in Sources */,
 				FCED92082C3C4BE300BA0275 /* CircleButtonView.swift in Sources */,
 				FCED91EF2C3C46C100BA0275 /* MobileCryptoApp.swift in Sources */,

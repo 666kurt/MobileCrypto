@@ -8,7 +8,7 @@
 import Foundation
 
 extension Double {
-    
+
     /// Convent a Double into Currency
     /// ```
     /// Convert 1234.56 -> $1.234,65
@@ -32,7 +32,7 @@ extension Double {
     /// Convert 0.12345 -> "$0.123456"
     /// ```
     
-    func asCurrencyWithDecimal() -> String {
+    func asCurrencyWith6Decimal() -> String {
         let number = NSNumber(value: self)
         return currencyFormatter.string(from: number) ?? "$0.00"
     }

@@ -9,11 +9,15 @@ import SwiftUI
 
 @main
 struct MobileCryptoApp: App {
+    
+    @StateObject var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 HomeScreen()
             }
+            .environmentObject(vm)
         }
     }
 }

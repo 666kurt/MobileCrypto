@@ -7,8 +7,11 @@
 
 import SwiftUI
 
+// MARK: HomeScreen
+
 struct HomeScreen: View {
     
+    @EnvironmentObject private var vm: HomeViewModel
     @State private var showPortfolio: Bool = false
     
     var body: some View {
@@ -22,13 +25,26 @@ struct HomeScreen: View {
             VStack {
                 headerView
                 Spacer()
+                
+                columnTitles
+                
+                if !showPortfolio {
+                    allCoinList
+                        .transition(.move(edge: .leading))
+                } else {
+                    portfolioCoinList
+                        .transition(.move(edge: .trailing))
+                }
             }
         }
     }
 }
 
+// MARK: Views for HomeScreen
+
 extension HomeScreen {
-    var headerView: some View {
+    
+    private var headerView: some View {
         HStack {
             CircleButtonView(imageName: showPortfolio
                              ? "plus"
@@ -56,10 +72,50 @@ extension HomeScreen {
         }
         .padding(.horizontal)
     }
+    
+    private var allCoinList: some View {
+        List() {
+            ForEach(vm.homeCoinList) { coin in
+                CoinRowView(coin: coin, showHoldingColumn: false)
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
+            }
+        }
+        .listStyle(.plain)
+    }
+    
+    private var portfolioCoinList: some View {
+        List() {
+            ForEach(vm.portfolioCoinList) { coin in
+                CoinRowView(coin: coin, showHoldingColumn: true)
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
+            }
+        }
+        .listStyle(.plain)
+    }
+    
+    private var columnTitles: some View {
+        HStack {
+            Text("Coin")
+            Spacer()
+            
+            if showPortfolio {
+                Text("Holdings")
+            }
+    
+            Text("Prices")
+                .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+        }
+        .font(.caption)
+        .foregroundStyle(Color.theme.secondaryText)
+        .padding(.horizontal, 8)
+    }
 }
+
+// MARK: Preview
 
 #Preview {
     NavigationStack {
         HomeScreen()
+            .environmentObject(DeveloperPreview.shared.homeVM)
     }
 }
