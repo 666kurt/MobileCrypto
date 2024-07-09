@@ -75,7 +75,7 @@ extension HomeScreen {
     
     private var allCoinList: some View {
         List() {
-            ForEach(vm.homeCoinList) { coin in
+            ForEach(vm.allCoinList) { coin in
                 CoinRowView(coin: coin, showHoldingColumn: false)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
             }
