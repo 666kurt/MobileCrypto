@@ -27,9 +27,9 @@ extension Color {
 }
 
 struct ColorData {
-    let accent = Color("AccentColor")
-    let background = Color("BackgroundColor")
-    let red = Color("RedColor")
-    let green = Color("GreenColor")
-    let secondaryText = Color("SecondaryTextColor")
+    let accent = Color("accentColor")
+    let background = Color("backgroundColor")
+    let red = Color("redColor")
+    let green = Color("greenColor")
+    let secondaryText = Color("secondaryTextColor")
 }
